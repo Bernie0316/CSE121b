@@ -1,0 +1,51 @@
+<!-- dom-basics.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2</title>
+    <script defer>
+      const newParagraph = document.createElement("p");
+    newParagraph.innerText = "Added with Javascript!";
+    document.body.appendChild(newParagraph);
+
+    // 創建一個新的圖片元素，並給予一個常數名子
+    const newImage = document.createElement('img');
+    // 設立圖片元素路徑及意義
+    newImage.setAttribute('src', 'https://picsum.photos/200');
+    newImage.setAttribute('alt', 'Description of image');
+    // 我還是不知道這是啥...
+    document.body.appendChild(newImage);
+
+    // If we have more complex HTML to add we can insert a whole string in at once:
+    const newDiv = document.createElement("div");
+    newDiv.innerHTML = "<ul><li>One</li><li>Two</li><li>Three</li></ul>";
+    document.body.appendChild(newDiv);
+
+    // Create a new section element.
+    const newSection = document.createElement("section");
+    // Add an h2 element with the content "CSE 121b"
+    newSection.innerHTML = "<h2>CSE 121b</h2>";
+    // Add a paragraph p that says: "Welcome to Javascript Language"
+    newSection.innerHTML += "<p>Welcome to Javascript Language</p>"
+    // Add your section to the body.
+    document.body.appendChild(newSection);
+    </script>
+  </head>
+  <body>
+    <h1>Week 2</h1>
+    <section>
+      <h2>Section 1</h2>
+      <p>This is a paragraph</p>
+      <p id="p2">This is a paragraph with an ID</p>
+    </section>
+    <section>
+      <h2>Section 2</h2>
+      <div>
+        <p>This is a paragraph in section 2</p>
+        <p class="green">This is a paragraph with an class</p>
+      </div>
+    </section>
+  </body>
+</html>

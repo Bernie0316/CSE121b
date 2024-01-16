@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let output = "Welcome to " + courseSubject + " " + courseNumber + "!Credits: " + courseCredits + "Length: " + courseLength;
+        // Change this concatenated string into a template literal:
+        output = `Welcome to ${courseSubject} ${courseNumber} !Credits: ${courseCredits} Length: ${courseLength}`;
+
+        ///////////////////////////////
+
+        let temples = ["Rome", "Salt Lake", "Nauvoo"];
+        let listItems = "";
+        for (const temple of temples) {
+            listItems += `<li>${temple}<li>`;
+        }
+        document.querySelector("ul").innerHTML = listItems;
+        // Given the following script, 
+        // finish the code snippet to produce a list of three temples base on the temples array:
+    </script>
+</body>
+</html>
