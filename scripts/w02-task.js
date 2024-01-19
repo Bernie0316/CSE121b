@@ -27,8 +27,8 @@ var array = ['Chocolate', 'Burger', 'Steak'];
 foodElement.innerHTML = array;
 array.push("Cheese")
 foodElement.innerHTML += `<br>${array}</br>`;
-array.pop(0)
+array.shift();
 foodElement.innerHTML += array;
-array.pop()
+array.pop();
 foodElement.innerHTML += `<br>${array}</br>`
 
