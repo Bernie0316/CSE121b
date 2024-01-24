@@ -90,6 +90,6 @@ const multiplyMap = array.map(number => number * 2);
 multiplied.innerHTML = multiplyMap;
 
 /* Output Sum of Multiplied by 2 Array */
-const SumOfMultiplied = document.getElementById("#sumOfMultiplied");
-const sumOfMultiplied = multiplied.reduce((accumlator, currentValue) => accumlator + currentValue);
+const SumOfMultiplied = document.querySelector("#sumOfMultiplied");
+const sumOfMultiplied = array.reduce((accumlator, currentValue) => accumlator + currentValue);
 SumOfMultiplied.innerHTML = sumOfMultiplied;
