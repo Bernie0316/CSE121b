@@ -23,33 +23,35 @@ const subtractNumbers = function () {
     let subtract1 = Number(document.querySelector('#subtract1').value);
     let subtract2 = Number(document.querySelector('#subtract2').value);
     let difference = subtract(subtract1, subtract2);
-    document.querySelector('#difference').value = difference;
-    return difference
+    // document.querySelector('#difference').value = difference;
+    // return difference
+    document.querySelector('#difference').value = subtract(subtract1, subtract2);
 }
 document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers)
 
 /* Arrow Function - Multiply Numbers */
 const multiply = (number1, number2) => number1 * number2;
 const multiplyNumbers = () => {
-    let multiply1 = Number(document,querySelector('#factor1').value);
-    let multiply2 = Number(document,querySelector('#factor2').value);
-    // document.querySelector('#product').value = multiply(multiply1, multiply2);
-    let multiply = multiply(multiply1, multiply2);
-    document.querySelector('#product').value = multiply;
-    return multiply
+    let multiply1 = Number(document.querySelector('#factor1').value);
+    let multiply2 = Number(document.querySelector('#factor2').value);
+    document.querySelector('#product').value = multiply(multiply1, multiply2);
+    // let multiplyoutput = multiply(multiply1, multiply2);
+    // document.querySelector('#product').value = multiplyoutput;
+    return multiplyoutput
 }
-document.querySelector('#product').addEventListener('click', multiplyNumbers)
+document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers)
 
 /* Open Function Use - Divide Numbers */
 const divide = (number1, number2) => number1 / number2;
 const divideNumbers = () => {
-    let divide1 = Number(document,querySelector('#dividend').value);
-    let divide2 = Number(document,querySelector('divisor').value);
-    let divide = divide(divide1, divide2);
-    document.querySelector('#quotient').value = divide;
+    let divide1 = Number(document.querySelector('#dividend').value);
+    let divide2 = Number(document.querySelector('#divisor').value);
+    // let divide = divide(divide1, divide2);
+    // document.querySelector('#quotient').value = divide;
+    document.querySelector('#quotient').value = divide(divide1, divide2);
     return divide
 }
-document.querySelector('#quotient').addEventListener('click', divideNumbers)
+document.querySelector('#divideNumbers').addEventListener('click', divideNumbers)
 
 /* Decision Structure */
 
@@ -91,5 +93,5 @@ multiplied.innerHTML = multiplyMap;
 
 /* Output Sum of Multiplied by 2 Array */
 const SumOfMultiplied = document.querySelector("#sumOfMultiplied");
-const sumOfMultiplied = array.reduce((accumlator, currentValue) => accumlator + currentValue);
+const sumOfMultiplied = multiplyMap.reduce((accumlator, currentValue) => accumlator + currentValue);
 SumOfMultiplied.innerHTML = sumOfMultiplied;
