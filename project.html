@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | Final Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html" class="active">W5 Task</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>Final Project</h1>
+    <h2>Currency Converter</h2>
+    
+    <!-- input currency select -->
+    <section id="section1">
+      <div id="inputCurrency">
+        <label for="input">From:</label>
+        <select id="inputselect" title="Choose a input Currency.">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="TWD">TWD</option>
+        </select>
+      </div> <!-- 這其實沒啥用，就是之後可以加一些東西進去而已 --> 
+
+      <!-- output currency select -->
+      <div id="outputCurrency">
+        <label for="input">To:</label>
+        <select id="outputselect" title="Choose a output Currency.">
+          <option value="" disabled selected>Currency Selecter</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="TWD">TWD</option>
+        </select>
+      </div>
+
+      <div> <!-- input currency form -->
+        <label for="input">Input Price:</label>
+        <input type="text" id="input" name="input1">
+      </div>
+      <div> <!-- excahge button -->
+        <input type="button" id="exchangerate" value="exchangerate">
+      </div>
+      <div> <!-- output currency form -->
+        <label for="output">Output:</label>
+        <input type="text" id="output" name="output" disabled>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy;<span id="year"></span> | Currency Converter | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/w06-final-project.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+货币转换器：
+    使用货币兑换 API（如 ExchangeRate-API）获取汇率。
+    允许用户在不同货币之间进行转换。
+    使用条件分支处理边界情况（如无效输入）。
+    与 DOM 交互，动态显示转换结果。
+    利用模板文字构建 UI 元素并显示转换后的金额。
+    
+urrency Converter:
+    Use a currency exchange API (such as ExchangeRate-API) to fetch exchange rates.
+    Allow users to convert between different currencies.
+    Use conditional branching to handle edge cases (e.g., invalid input).
+    Interact with the DOM to display conversion results dynamically.
+    Utilize template literals to construct UI elements and display the converted amounts.
+
+///////////////////////////////////////////////////////////////
+
+Exchange Rate Converter:
+This project will take correct data of exchange rate from an Exchange Rate API, and helps user exchange the currencies they enter.
+
+Here’s the functions:
+Currency Conversion: User can input the number they want to convert and select the source and target currencies from a dropdown menu.
+Realtime Exchange Rates: The application fetches the latest exchange rates from the Exchange Rate API, to make sure accuracy and reliability.
+Dynamic Conversion: When user input the number and select currencies, the application dynamically calculates and displays the converted amount.
+Error Handling: The application includes error handling to notify users in case of invalid input or if the API request fails.
+
+External Data Source:
+The Exchange Rate Converter consumes data from a public Exchange Rate API, such as ExchangeRate-API, which provides real-time exchange rates for various currency pairs. 
+Frontend: HTML, CSS, and JavaScript will be used to create the user interface and handle user interactions.
+Backend: The application will primarily rely on frontend JavaScript to fetch data from the Exchange Rate API and perform currency conversions.
+DOM Manipulation: JavaScript will work with the DOM to update the webpage with the fetched exchange rates and display the converted amounts.
+Error Handling: Conditional branching will be used to handle errors, providing feedback to the user in case of invalid input or API request failures.
